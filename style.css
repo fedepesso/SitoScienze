@@ -12,6 +12,7 @@ main {
   flex: 1 0 auto;
 }
 
+
 header, main, footer {
   padding-left: 300px;
 }
