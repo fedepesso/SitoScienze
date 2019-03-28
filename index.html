@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-  <html>
+  <html lang="it">
     <head>
+      <meta charset="utf-8">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
       <link rel="stylesheet" href="style.css">
@@ -10,62 +11,11 @@
     </head>
     <body>
 
-      <header class="navbar-fixed hide-on-large-only">
-        <nav>
-          <div class="nav-wrapper grey darken-4">
-            <a href="#!" class="brand-logo">LabNet</a>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          </div>
-        </nav>
-      </header>
-
-      <ul id="slide-out" class="sidenav sidenav-fixed">
-        <li><div class="user-view grey darken-4">
-          <img class ="logo" src="./img/pool-granata_studio-alfa-1.png">
-          <!-- Aggiungere all'utente la possibilità di cambiare l'immagine nel cerchio
-          <div class="background">
-            <img src="https://images.pexels.com/photos/220201/pexels-photo-220201.jpeg?auto=compress&cs=tinysrgb&w=300">
-          </div> -->
-          <a href="#user"><img class="circle" src="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?cs=tinysrgb&w=128"></a>
-          <a href="#name"><span class="white-text name">Nome</spane></a>
-          <a href="#email"><span class="white-text email">nom@email.com</span></a>
-        </div></li>
-        <li><a href="#!"><i class="material-icons left">home</i>Home</a></li> <!-- Home del liceo? Home del sito? -->
-        <li><a href="#!"><i class="material-icons left">cloud</i>Archivio</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="./protocolli.html"><i class="material-icons left">assignment</i>Protocolli sperimentali </a></li>
-        <li><a href="./sicurezza.html"><i class="material-icons left">security</i>Protocolli sulla sicurezza</a></li>
-        <li><a href="#!"><i class="material-icons left">book</i>Materiale</a></li>
-        <li><a href="#!"><i class="material-icons left">people</i>Social Media</a></li>
-        <li><div class="divider"></div></li>
-        <li><a href="#!"><i class="material-icons left">exit_to_app</i>Esci</a></li>
-      </ul>
-
       <main class="container">
         <h2>Home</h2>
         <div id ="news">
         </div>
       </main>
-
-      <footer class="page-footer grey darken-4">
-        <div class="container">
-          <div class="row">
-            <div class="col l6 s12">
-              <h5 class="white-text">LabNet</h5>
-              <p class="grey-text text-lighten-4">Descrizione del progetto</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-              <h5 class="white-text">Links</h5>
-              <ul>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </footer>
 
       <script type="text/template" id="news-card">
         <% for(let n in news){ %>
@@ -82,13 +32,10 @@
       </script>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-      <script src="js/ejs.min.js"></script>
       <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-
+      <script src="js/ejs.min.js"></script>
+      <script src="js/init.js"></script>
       <script src="js/index.js"></script>
 
-      <script>
-        M.AutoInit();
-      </script>
     </body>
   </html>
