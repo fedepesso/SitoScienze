@@ -5,13 +5,12 @@ let user = {
 }
 
 let elements = [
-  ["Home", "home", "/"],
-  ["Archivio", "cloud", ""],
-  "divider",
-  ["Protocolli sperimentali", "assignment", ""],
-  ["Protocolli sulla sicurezza", "security", ""],
+  ["Home", "home", "index.html"],
   ["Materiale", "book", ""],
   ["Social Media", "people", ""],
+  "divider",
+  ["Protocolli sperimentali", "assignment", "protocols.html"],
+  ["Protocolli sulla sicurezza", "security", "s-protocols.html"],
   "divider",
   ["Esci", "exit_to_app", ""]
 ]
